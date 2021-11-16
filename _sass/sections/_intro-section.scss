@@ -1,0 +1,14 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.intro-section {
+    // @include gradient;
+    padding: 10rem 0 0 0;
+    width: 100%;
+    height: 100%;
+    // background: url("../images/background.jpg") no-repeat center center fixed;
+    background-image: linear-gradient(to right, rgba($primary, 0.5), rgba($secondary, 0.5)),
+        url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}

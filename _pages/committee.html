@@ -1,0 +1,28 @@
+---
+layout: page
+title: Organizing Committee
+handle: organizing-committee
+---
+
+<table>
+    {% for member in site.data.conference.current_committee %}
+    <tr>
+        <td>{% if member.email %}<a href="mailto:{{ member.email }}">{{ member.name }}</a>{% else %}{{ member.name }}{%
+            endif %}</td>
+        <td>{{ member.affiliation }}</td>
+        <td>{{ member.role }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+<h3>Past Committee Members</h3>
+
+<table>
+    {% for member in site.data.conference.past_committee %}
+    <tr>
+        <td>{{ member.name }}</td>
+        <td>{{ member.affiliation }}</td>
+    </tr>
+    {% endfor %}
+</table>

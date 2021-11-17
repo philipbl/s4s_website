@@ -4,7 +4,7 @@ install:
 	bundle install
 
 develop: install
-	bundle exec jekyll serve --livereload --incremental
+	bundle exec jekyll serve --livereload
 
 build: install
 	bundle exec jekyll build

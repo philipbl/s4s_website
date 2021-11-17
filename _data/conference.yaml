@@ -1,0 +1,92 @@
+date: April 7, 2022
+location: Brigham Young University, Provo, UT
+description: |
+  Air Quality: Science for Solutions is an annual conference on air quality, especially for Utah and the Intermountain West. It began with a pair of conferences by the same name hosted by the Utah Department of Environmental Quality, Division of Air Quality; the Program for Air Quality Health and Society at the University of Utah; and the Utah State University Bingham Entrepreneurship & Energy Research Center in 2015.
+
+  The mission of this conference is to bridge divides that separate researchers of various disciplines from each other, from professionals in the industrial and regulatory realms, and from the public, and to facilitate a cross-pollination of ideas working towards the development of solutions.
+
+important_dates:
+  - text: Abstract submission
+    date: TBD
+
+  - text: Paper submission
+    date: TBD
+
+  - text: Notification
+    date: TBD
+
+news:
+  - date: November 16, 2021
+    text: Here is some example news...
+
+current_committee:
+  - name: Cate Youatt
+    affiliation: Utah Division of Air Quality
+    role: Overall Coordinator
+    email:
+
+  - name: Jaron Hansen
+    affiliation: Brigham Young University
+    role: BYU Representative
+    email: jhansen@chem.byu.edu
+
+  - name: Kerry Kelly
+    affiliation: University of Utah
+    role: U of U Representative
+    email: kelly@eng.utah.edu
+
+  - name: Judy Ou
+    affiliation: University of Utah
+    role: Air Quality Health Representative
+    email: judy.ou@hci.utah.edu
+
+  - name: Randy Martin
+    affiliation: Utah State University
+    role: USU Logan Representative
+    email: randy.martin@usu.edu
+
+  - name: Seth Lyman
+    affiliation: Utah State University
+    role: USU Uintah Basin Representative
+    email: seth.lyman@usu.edu
+
+  - name: John Sohl
+    affiliation: Weber State University
+    role: WSU Representative
+    email: jsohl@weber.edu
+
+past_committee:
+  - name: Chris Pennell
+    affiliation: Utah Division of Air Quality
+
+  - name: Lexie Wilson
+    affiliation: Utah Division of Air Quality
+
+supporters:
+  - name: Atmosphere Journal
+    image: images/Atmosphere_Journal-Logo.png
+    link: https://www.mdpi.com/journal/atmosphere
+
+  - name: UCAIR
+    image: images/UCAIR-logo.png
+    link: https://www.ucair.org
+
+  - name: UWRL
+    image: images/uwrllogo.gif
+    link: http://uwrl.usu.edu/
+
+  - name: USU College of Engineering
+    image: images/USU CE blue-wordmark.png
+    link: https://engineering.usu.edu/
+
+  - name: Civil and Environmental Engineering
+    image: images/cee.gif
+    link: https://cee.usu.edu/index
+
+  - name: Utah State University
+    image: images/usu-ub.png
+    link: https://uintahbasin.usu.edu/
+
+  - name: University of Utah Air Quality, Health, and Society Program
+    image: images/UofU-AirQualityProgram.png
+    link: http://www.airquality.utah.edu/

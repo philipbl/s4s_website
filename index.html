@@ -9,7 +9,7 @@ layout: default
                 <h1 class="display-2">
                     <span class="display-2--intro">Air Quality: Science for Solutions 6</span>
                     <span class="display-2--description lh-base">
-                        April 7, 2022 — Brigham Young University, Provo, UT
+                        {{ site.data.conference.date }} — {{ site.data.conference.location }}
                     </span>
                 </h1>
             </div>
@@ -29,16 +29,7 @@ layout: default
                 <div class="">
                     <h3 class="display-3--title mt-1">Overview</h3>
                     <p class="lh-lg">
-                        Air Quality: Science for Solutions is an annual conference on air quality, especially for Utah
-                        and the Intermountain West. It began with a pair of conferences by the same name hosted by the
-                        Utah Department of Environmental Quality, Division of Air Quality; the Program for Air Quality
-                        Health and Society at the University of Utah; and the Utah State University Bingham
-                        Entrepreneurship & Energy Research Center in 2015.
-
-                        The mission of this conference is to bridge divides that separate researchers of various
-                        disciplines from each other, from professionals in the industrial and regulatory realms, and
-                        from the public, and to facilitate a cross-pollination of ideas working towards the development
-                        of solutions.
+                        {{ site.data.conference.description }}
                     </p>
                 </div>
             </div>
@@ -46,9 +37,9 @@ layout: default
                 <div class="">
                     <h3 class="display-3--title mt-1">Important Dates</h3>
                     <p class="lh-lg">
-                        Abstract submission: <b>TBD</b> <br>
-                        Paper submission: <b>TBD</b> <br>
-                        Notification: <b>TBD</b> <br>
+                        {% for item in site.data.conference.important_dates %}
+                        {{ item.text }}: <b>{{ item.date }}</b><br>
+                        {% endfor %}
                     </p>
                 </div>
             </div>
@@ -68,7 +59,9 @@ layout: default
         <div class="row">
             <div class="col-md-12 col-lg-12">
                 <ul>
-                    <li><b>[November 16, 2021]</b> Conference date announced</li>
+                    {% for news in site.data.conference.news %}
+                    <li><b>[{{ news.date }}]</b> {{ news.text }}</li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
@@ -85,51 +78,14 @@ layout: default
             </div>
         </div>
         <div class="row">
+            {% for supporter in site.data.conference.supporters %}
             <div class="col-md-6 col-lg-4">
                 <div class="campanies__logo-box shadow-sm">
-                    <a href="https://www.mdpi.com/journal/atmosphere"><img src="images/Atmosphere_Journal-Logo.png"
-                            alt="Atmosphere Journal Logo" title="Atmosphere Journal" class="img-fluid"></a>
+                    <a href="{{ supporter.link }}"><img src="{% link {{ supporter.image }} %}"
+                            alt="{{ supporter.name }} Logo" title="{{ supporter.link }} Logo" class="img-fluid"></a>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="campanies__logo-box shadow-sm">
-                    <a href="https://www.ucair.org"><img src="images/UCAIR-logo.png" alt="UCAIR Logo" title="UCAIR"
-                            class="img-fluid"></a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="campanies__logo-box shadow-sm">
-                    <a href="http://uwrl.usu.edu/"><img src="images/uwrllogo.gif" alt="UWRL Logo" title="UWRL"
-                            class="img-fluid"></a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="campanies__logo-box shadow-sm">
-                    <a href="https://engineering.usu.edu/"><img src="images/USU CE blue-wordmark.png"
-                            alt="USU College of Engineering Logo" title="USU College of Engineering"
-                            class="img-fluid"></a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="campanies__logo-box shadow-sm">
-                    <a href="https://cee.usu.edu/index"><img src="images/cee.gif"
-                            alt="Civil and Environmental Engineering Logo" title="Civil and Environmental Engineering"
-                            class="img-fluid"></a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="campanies__logo-box shadow-sm">
-                    <a href="https://uintahbasin.usu.edu/"><img src="images/usu-ub.png" alt="Utah State University Logo"
-                            title="Utah State University" class="img-fluid"></a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="campanies__logo-box shadow-sm">
-                    <a href="http://www.airquality.utah.edu/"><img src="images/UofU-AirQualityProgram.png"
-                            alt="University of Utah Air Quality, Health, and Society Program"
-                            title="University of Utah Air Quality, Health, and Society Program" class="img-fluid"></a>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
     </div>
